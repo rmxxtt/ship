@@ -8,17 +8,17 @@ def load_fields():
 
 
 def draw_field(field: dict):
-    for xy in field["field"]:
-        for value in xy:
-            print(value, end=" ")
+    for y_line in field["field"]:
+        for x_value in y_line:
+            print(x_value, end=" ")
         print()
 
 
 def draw_fields(fields: list):
     for field in fields:
-        for xy in field["field"]:
-            for value in xy:
-                print(value, end=" ")
+        for y_line in field["field"]:
+            for x_value in y_line:
+                print(x_value, end=" ")
             print()
         print()
 
